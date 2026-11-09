@@ -1,0 +1,10 @@
+{
+  "business-opportunity-evaluator": {
+    "SKILL.md": "8d59dc6eab129ae6590d58b6a02e1512d0f9a1629a3752c1be1fa0d504d3b036",
+    "references/research-protocol.md": "04a31e9adf5431d0b81c8cbe8219bf5d722daec46bf7d4825532500a0259d263",
+    "references/full-schema.md": "ff4a9b76d9a9f8e12aee47c707b22692e5a3742e7bc25d75b1663b2b737fb8d0",
+    "references/regression-tests.md": "c9cf057ff24642ea119a0ca0632b49199ec381883ec9416e6b9d415d7147dd1e",
+    "references/scoring.md": "fbc9e172c26cbe0ef8d7cddcef9d41cd3eda2e3f7b139373f95f6266a55f4aea",
+    "agents/openai.yaml": "1b38f7063248afd7ecaa924919cc0637b7ab99a2b1a806026e7ff89132a2350e"
+  }
+}

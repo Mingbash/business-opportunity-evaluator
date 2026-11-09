@@ -1,0 +1,4 @@
+interface:
+  display_name: "Business Opportunity Evaluator"
+  short_description: "Decide whether a business idea is worth trying"
+  default_prompt: "Use $business-opportunity-evaluator to assess this idea. Look at who would pay, what it would take for me to start, and what I should test first."
