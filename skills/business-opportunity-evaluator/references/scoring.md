@@ -85,7 +85,7 @@ Apply a cap only when a blocking condition is evidenced, not merely unresearched
 ## Comparison and ranking
 
 - Compare opportunities only within the same objective or explain the different objectives.
-- Name one preferred option and one fallback when the user is choosing.
+- Name the preferred option and a fallback when the evidence distinguishes them. Give a provisional first test when it follows from stated assumptions. If a decision-critical unknown prevents a defensible preference, leave the ranking open and identify the first check that would distinguish the options.
 - Explain the smallest evidence change that would reverse the ranking.
 - Research the 1–2 unknowns most likely to reverse the ranking before naming a preferred option; otherwise label the ranking provisional.
 - A GO means worth entering with bounded cost, not guaranteed success. A NO-GO applies to the defined business form, not the entire industry.

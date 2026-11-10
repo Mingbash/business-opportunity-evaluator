@@ -4,6 +4,16 @@ Use this suite only when maintaining or materially revising the skill. Tests jud
 
 ## Recent failure regressions
 
+### R0 — Turn a broad idea into a shortlist
+
+**Prompt:** I want to make money with websites. I can build a Framer site, have eight hours a week, and can spend US$150. I want my first paid order within a month.
+
+**Pass invariants:**
+
+- Identifies the side-hustle objective and applies the same time, budget and first-sale goal throughout.
+- Proposes two or three distinct businesses if plausible, with payer, purchase outcome, deliverable, price mechanism and buyer access for each. Does not grade “websites” as one market or split otherwise identical businesses by platform or channel.
+- Gives the eight dimensions, separate market/entry/overall judgments with confidence, a first test and the evidence that could reverse the preference. Uses U or a provisional judgment for unsupported conclusions.
+
 ### R1 — Preserve the original atomic business
 
 **Prompt:** Evaluate an AI receptionist sold directly to independent auto-detailing shops through cold outreach.
@@ -52,7 +62,7 @@ Use this suite only when maintaining or materially revising the skill. Tests jud
 **Pass invariants:**
 
 - Scores the requested direct model before repairs.
-- A changed payer or revenue mechanism creates a separate atomic variant; a changed channel or delivery model creates a named repair route with the affected entry tier evaluated separately.
+- A changed payer, buyer job, deliverable or revenue mechanism creates a separate atomic variant. A change in channel or delivery method alone creates a named repair route with the affected entry tier evaluated separately.
 - Shows the new dependency and evidence needed; never silently merges or score-launders the redesign.
 
 ### R6 — Research the ranking-changing unknown first

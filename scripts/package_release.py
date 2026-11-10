@@ -3,7 +3,7 @@
 from pathlib import Path
 import argparse, hashlib, json, zipfile
 from check_release import check, ROOT
-VERSION='0.1.0'
+VERSION='0.2.0'
 
 def build(out):
     errors=check()
@@ -21,7 +21,7 @@ def build(out):
         dest=out/filename
         with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED) as z:
             for name,p in sorted(entries):
-                info=zipfile.ZipInfo(name,(2026,11,9,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
+                info=zipfile.ZipInfo(name,(2026,11,10,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
                 z.writestr(info,p.read_bytes())
         results[filename]={'sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'files':len(entries)}
     archive(f'{ROOT.name}-{VERSION}-source.zip',[(ROOT.name+'/'+n,p) for n,p in files])

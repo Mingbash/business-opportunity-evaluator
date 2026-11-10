@@ -1,6 +1,6 @@
 ---
 name: business-opportunity-evaluator
-description: Help the user decide whether a business idea, startup, or side hustle is worth trying. Assess the buyer, alternatives, path to a first sale, and full costs. Give separate market, current entry, and overall S–F judgments across eight dimensions. Use when the user asks about viability or compares opportunities. Offer a deeper sourced review when useful.
+description: Help the user decide whether a business idea, startup, or side hustle is worth trying. Turn a broad idea into up to three concrete businesses and compare which to test first. Assess the buyer, alternatives, path to a first sale, and full costs. Give separate market, current entry, and overall judgments across eight dimensions. Use for viability or opportunity comparisons.
 license: MIT
 ---
 
@@ -12,15 +12,11 @@ Assess a concrete business as it exists **at the evaluation date**, then tell th
 
 Respond in the user's language.
 
-## Define the atomic business first
+## Turn the idea into businesses you can compare
 
-Evaluate one unit with the same:
+Define each business using:
 
 `payer × user × trigger × job/outcome × offer boundary × revenue mechanism × acquisition path`
-
-Do not score broad labels such as “AI websites,” “Framer,” “digital products,” or “consulting.” Narrow an ambiguous label with explicit working assumptions. Ask only when different answers would materially change the decision.
-
-Lock the user-specified version before research. Do not change its payer, buyer job, offer, revenue mechanism, or acquisition path merely because another version seems easier. Evaluate the original first. A changed payer, buyer job, offer, or revenue mechanism is a separate atomic variant. A changed channel, partner, or delivery model is an explicit repair route whose affected entry tier is evaluated separately; never silently replace the original route.
 
 Classify the objective as:
 
@@ -28,6 +24,12 @@ Classify the objective as:
 - **Side hustle:** prioritize reachable buyers, time to cash, net cash contribution, founder hours, and maintenance burden.
 
 If the user has not specified the objective, infer the more plausible mode and state it.
+
+- **Broad idea:** Use the stated goal, available time, budget, skills, buyer access and supplied evidence to propose up to three plausible businesses. State working assumptions and ask only about missing information that would materially change the choice. For each path, name the payer, what they buy, what you deliver and support, how you charge, and where you would reach the buyer. Do not score the umbrella label or invent options to fill the shortlist.
+- **Concrete idea or explicit comparison:** Lock each requested business and route before research. Evaluate it as supplied. Keep improvements separate and compare all explicitly requested candidates, even when there are more than three.
+- **Business versus route:** A material change in payer, buyer job, what is delivered, or revenue mechanism creates a separate business. A change in platform, channel, partner, or implementation method by itself is a route within the same business. Compare route-specific dependencies and entry conditions separately, without counting the routes as additional businesses. A partner who actually pays for a different offer can be a new payer.
+
+Compare candidates against the same objective, constraints and evidence standard. Show the decisive differences and the first path to validate, the first concrete test, and the evidence that could change the order. Label a provisional preference and its assumptions. Leave the ranking open when a decision-changing unknown prevents a defensible preference.
 
 ## Default: compact evaluation
 
@@ -57,6 +59,8 @@ Output:
 - the largest unproven assumption that could invalidate the tier;
 - only the 1–3 unknowns most likely to change the decision and their stop conditions.
 
+For multiple candidates, use a compact side-by-side table. Keep the business definitions, judgments and unknowns attributable to each candidate. Compare routes within their business.
+
 Then ask whether the user wants the full source-backed analysis. Do not ask again if full analysis was already requested.
 
 Read [references/scoring.md](references/scoring.md) when assigning tiers, comparing opportunities, or explaining a score.
@@ -75,7 +79,7 @@ If the underlying business structure is sound but one dimension has a hard defec
 
 Examples include changing a full platform to a narrow module or bespoke delivery to a fixed-scope offer. Change direct acquisition to partner-led distribution only after the partner-qualification test above passes; do not invent cooperation merely because the intermediary already has customers.
 
-Keep the original and redesigned variants separate. State what changed, the expected score effect, the new dependency or tradeoff, and re-evaluate the affected tier. Never silently replace the user's business or award the original a higher score merely because a theoretical repair exists.
+Keep the original and redesigned variants or routes separate. State what changed, the expected score effect, the new dependency or tradeoff, and re-evaluate the affected tier. Never silently replace the user's business or award the original a higher score merely because a theoretical repair exists.
 
 ## Full analysis
 

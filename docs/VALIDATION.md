@@ -1,8 +1,23 @@
 # Validation and compatibility / 验证与兼容性
 
-Checked 2026-11-09 for v0.1.0. The runtime probes below were run against the candidate. The release rechecked metadata and packaging after the copy edit.
+## v0.2.0 · 2026-11-10
 
-## Automated checks
+Four separate read-only Codex CLI 0.167.0-alpha.3.2 sessions used the project-local skill and synthetic inputs. Each session completed the expected behavior check.
+
+| Input | Observed result |
+|---|---|
+| Broad website side hustle with a first-sale goal | Compared two businesses with different payers and deliverables under the same time and cash limits. Gave eight dimensions, separate provisional grades, a first test and evidence that could reverse the order. |
+| Specific direct-to-shop website service | Kept the buyer, offer, price and direct outreach route. Used the existing eight dimensions and separated visible problems from willingness to pay. |
+| The same offer sold through email or a meetup | Kept one business and compared two routes. Market structure stayed shared. Route-specific access and entry uncertainty remained visible. |
+| Two template businesses with equally sparse evidence, in Chinese | Left both options open, marked unsupported dimensions unknown, and suggested a cheap way to look for evidence that would distinguish them. |
+
+Release checks also covered both README translations, dated case evidence, the standalone skill and the source archives. These are targeted behavior checks. They do not verify current market conditions.
+
+## v0.1.0 · 2026-11-09
+
+The earlier runtime probes below were run against the v0.1.0 candidate. That release rechecked metadata and packaging after the copy edit.
+
+### Automated checks
 
 - 3 Python unit tests passed. Independent directory containment, package links/shared-file checks, rejection of sibling dependency.
 - All installed skill directories passed the local skill frontmatter validator. Environment notes moved into the body because the local validator did not support the newer optional compatibility frontmatter key.
@@ -12,7 +27,7 @@ Checked 2026-11-09 for v0.1.0. The runtime probes below were run against the can
 
 Run `python3 scripts/check_release.py` and `python3 -m unittest discover -s tests -v` to repeat the deterministic checks. No external Python package is required for these checks.
 
-## Actual Agent behavior
+### Actual Agent behavior
 
 | Runtime / 环境 | Observed result / 已观察结果 | Limit / 边界 |
 |---|---|---|
@@ -24,7 +39,7 @@ Five-task smoke coverage: Chinese profile creation without an account, Spanish p
 
 An independent agent also forward-tested the five skills and reviewed seven exact README excerpts, their translations, source context and privacy. Both reviews passed within the stated scopes; the initial runtime budget error is preserved in private evaluation evidence rather than hidden.
 
-## Release scope / 发布范围
+### Release scope / 发布范围
 
 1. The MIT copyright notice is confirmed as Kudrat Kurban. Third-party references are linked and attributed; no third-party source content has been identified as bundled. Recheck if later revisions import such content.
 2. The Codex samples cover the documented tasks. Claude Code remains outside the runtime test scope.

@@ -4,7 +4,7 @@ Read this file only for a full analysis.
 
 ## Row grain
 
-One atomic business has one payer, one buyer job/outcome, one offer boundary, and one revenue mechanism. Record a meaningfully different payer, job, or revenue mechanism as a separate business. Keep platform and channel variants inside the same business unless they change what is bought or who pays.
+One atomic business has one payer, one buyer job/outcome, one offer boundary, and one revenue mechanism. Record a material change in payer, buyer job, deliverable or revenue mechanism as a separate business. Keep platform, channel and implementation variants within the business when these fields stay the same. Compare the routes' entry conditions within the business row.
 
 ## Output format
 

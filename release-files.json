@@ -14,6 +14,8 @@
   "docs/source-baseline.json",
   "examples/local-service.md",
   "examples/local-service.zh-CN.md",
+  "examples/website-paths.md",
+  "examples/website-paths.zh-CN.md",
   "release-files.json",
   "scripts/check_release.py",
   "scripts/package_release.py",
