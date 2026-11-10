@@ -26,6 +26,13 @@
   "skills/business-opportunity-evaluator/references/regression-tests.md",
   "skills/business-opportunity-evaluator/references/research-protocol.md",
   "skills/business-opportunity-evaluator/references/scoring.md",
+  "skills/idea-validation/LICENSE",
+  "skills/idea-validation/SKILL.md",
+  "skills/idea-validation/agents/openai.yaml",
+  "skills/idea-validation/references/full-schema.md",
+  "skills/idea-validation/references/regression-tests.md",
+  "skills/idea-validation/references/research-protocol.md",
+  "skills/idea-validation/references/scoring.md",
   "tests/behavior-prompts.md",
   "tests/test_package.py"
 ]

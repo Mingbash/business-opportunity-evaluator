@@ -5,6 +5,10 @@
 3. Paste your task and evidence. Define the offer, buyer, geography if known, and whether this is a main business or side hustle. State time/cash constraints that matter.
 4. Review the result and its source limitations. If current sources are unavailable, keep the result provisional. Ask for a full analysis when the additional evidence could change the decision.
 
+## Name and upgrades
+
+New installs use `idea-validation`, invoked as `$idea-validation` in Codex. `business-opportunity-evaluator` remains a standalone compatibility name, so existing commands, paths and release archives keep working. Both skills use the same evaluation instructions apart from their names. Install one name rather than both, and save any local customizations before upgrading.
+
 ## Dependencies and isolation
 
 No script runtime is needed. Browsing is needed only for claims requiring current verification. Spreadsheet output is optional.

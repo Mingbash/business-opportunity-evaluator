@@ -1,5 +1,11 @@
 # Validation and compatibility / 验证与兼容性
 
+## v0.2.1 naming change (unreleased) · 2026-11-10
+
+The canonical skill is `idea-validation`. The previous name remains independently installable. Both names passed the skill metadata validator, standalone containment/link checks, and all six Python package tests. The tests extract each built ZIP into a separate empty directory, check its matching name and references, and compare the two skill trees after normalizing only their names. The old skill ZIP has the same SHA-256 as the published v0.2.0 skill ZIP. Evaluation instructions and reference content are unchanged.
+
+The `npx skills add` end-to-end installer was not run in this pass. This is packaging and naming coverage, not a new behavioral benchmark. Historical runtime checks below still refer to the versions named there.
+
 ## v0.2.0 · 2026-11-10
 
 Four separate read-only Codex CLI 0.167.0-alpha.3.2 sessions used the project-local skill and synthetic inputs. Each session completed the expected behavior check.

@@ -1,4 +1,4 @@
-# Business Opportunity Evaluator
+# Idea Validation
 
 **Decide whether a business idea is worth trying with the resources and expectation you have.**
 
@@ -11,18 +11,20 @@ Tell your agent what you’re considering and what you can put into it. A broad 
 Install the skill in Codex.
 
 ```sh
-npx skills add Mingbash/business-opportunity-evaluator --skill business-opportunity-evaluator -a codex
+npx skills add Mingbash/business-opportunity-evaluator --skill idea-validation -a codex
 ```
+
+The repository URL stays the same. The old `--skill business-opportunity-evaluator` install command remains supported with the same evaluation instructions. Install either name, not both.
 
 Then paste your idea into a new chat. For example:
 
-> Use `$business-opportunity-evaluator` to look at a weekend bicycle repair service that picks up bikes around my town. I have six hours a week. I don’t know yet whether people would pay for pickup.
+> Use `$idea-validation` to look at a weekend bicycle repair service that picks up bikes around my town. I have six hours a week. I don’t know yet whether people would pay for pickup.
 
 You’ll get an eight-part assessment, separate grades for the market, your ability to enter, and the overall opportunity, plus one thing to test first. For bicycle pickup and repair, that might be whether riders would pay for pickup after you factor in the round trip.
 
 Give it a broader idea and it will compare up to three concrete paths. Each spells out who pays, what you deliver, how you charge, and where you would find buyers. You’ll see which path to test first and what could change that call.
 
-You can also download the skill from [Releases](https://github.com/Mingbash/business-opportunity-evaluator/releases) and copy the full folder into your agent’s skills directory. That route works without Node.js. [See the install steps and what we tested.](docs/QUICKSTART.md)
+Earlier releases keep the `business-opportunity-evaluator` name and invocation. You can download those versions from [Releases](https://github.com/Mingbash/business-opportunity-evaluator/releases) and copy the full folder into your agent’s skills directory. That route works without Node.js. [See the install steps and what we tested.](docs/QUICKSTART.md)
 
 ## How it looks at an idea
 
@@ -49,7 +51,7 @@ Those were decisions at the time, based on the research and assumptions then ava
 
 You get a market grade, a grade for your current ability to enter, and an overall grade, with confidence shown separately. The recommendation names the first test, the unknowns that matter, and when to stop.
 
-**The full analysis** adds five sections. The decision overview records the preferred entry and what would change it. The opportunity detail traces the buyer, alternatives, acquisition and delivery. The scoring table shows the weights and conditions that limit a grade. An evidence log records which source supports each claim. A separate assumptions and scenarios table lets you see what changes if price, sales or hours differ. [See the complete field list.](skills/business-opportunity-evaluator/references/full-schema.md)
+**The full analysis** adds five sections. The decision overview records the preferred entry and what would change it. The opportunity detail traces the buyer, alternatives, acquisition and delivery. The scoring table shows the weights and conditions that limit a grade. An evidence log records which source supports each claim. A separate assumptions and scenarios table lets you see what changes if price, sales or hours differ. [See the complete field list.](skills/idea-validation/references/full-schema.md)
 
 ## Why “Help me find a profitable business in 2026” falls short
 

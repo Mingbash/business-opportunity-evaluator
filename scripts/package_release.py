@@ -3,7 +3,7 @@
 from pathlib import Path
 import argparse, hashlib, json, zipfile
 from check_release import check, ROOT
-VERSION='0.2.0'
+VERSION='0.2.1'
 
 def build(out):
     errors=check()

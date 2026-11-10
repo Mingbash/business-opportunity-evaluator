@@ -1,4 +1,4 @@
-# 商业机会评估器 · Business Opportunity Evaluator
+# 商业点子验证 · Idea Validation
 
 **按你手里的资源和想达到的目标，这门生意值得试吗？**
 
@@ -11,18 +11,20 @@
 在 Codex 安装这个 skill。
 
 ```sh
-npx skills add Mingbash/business-opportunity-evaluator --skill business-opportunity-evaluator -a codex
+npx skills add Mingbash/business-opportunity-evaluator --skill idea-validation -a codex
 ```
+
+仓库地址保持不变，旧的 `--skill business-opportunity-evaluator` 安装命令继续可用，评估规则相同。新旧名称选一个安装即可。
 
 开一个新对话，说说你的想法。比如：
 
-> 用 `$business-opportunity-evaluator` 帮我看看，周末在镇上做自行车上门取送维修怎么样。我每周能拿出六小时，还不知道有人愿不愿意为取送付钱。
+> 用 `$idea-validation` 帮我看看，周末在镇上做自行车上门取送维修怎么样。我每周能拿出六小时，还不知道有人愿不愿意为取送付钱。
 
 你会收到一份八项简评。市场怎么样、你现在进不进得去、整体值不值得试，会分别给评级。自行车这个例子里，可以先算跑一趟取送的时间，再问车主愿意为取送付多少钱。
 
 如果你只说了一个大方向，它会先拆出最多三条值得比较的路径。每条都会写明谁付钱、交付什么、怎么收费、去哪里找买家，然后说明先验证哪条，以及什么新证据会改变这个顺序。
 
-也可以从 [Releases](https://github.com/Mingbash/business-opportunity-evaluator/releases) 下载单项包，把整个目录复制到 Agent 的 skill 目录。手动安装不用 Node.js。[查看安装步骤和适用环境。](docs/QUICKSTART.zh-CN.md)
+历史版本仍使用 `business-opportunity-evaluator` 名称和调用方式。可以从 [Releases](https://github.com/Mingbash/business-opportunity-evaluator/releases) 下载单项包，把整个目录复制到 Agent 的 skill 目录。手动安装不用 Node.js。[查看安装步骤和适用环境。](docs/QUICKSTART.zh-CN.md)
 
 ## 它会帮你算哪些账
 
@@ -49,7 +51,7 @@ npx skills add Mingbash/business-opportunity-evaluator --skill business-opportun
 
 最后给市场、当前入场和整体机会三项评级，各自带置信度。建议会写到先做什么、最影响决策的未知是什么，以及什么情况下该停。
 
-**完整分析**多给五组字段。决策总览写首选路径和改变判断的条件。机会详情写买家、替代、获客和交付。评分表给出权重和门槛。证据台账说明每条材料支持什么。假设与情景单独列出价格、销量、工时等变量。[看完整字段。](skills/business-opportunity-evaluator/references/full-schema.md)
+**完整分析**多给五组字段。决策总览写首选路径和改变判断的条件。机会详情写买家、替代、获客和交付。评分表给出权重和门槛。证据台账说明每条材料支持什么。假设与情景单独列出价格、销量、工时等变量。[看完整字段。](skills/idea-validation/references/full-schema.md)
 
 ## 直接问 AI「2026 年做什么生意赚钱」为什么经常问不到点上
 
